@@ -27,7 +27,7 @@ class App extends React.Component {
       return <HomePage handleHomePage={this.handleHomePage} handleContactPage={this.handleContactPage}/>
     }
     else if (this.state.contact) {
-      return <ContactPage handleHomePage={this.handleHomePage}/>
+      return <ContactPage handleHomePage={this.handleHomePage} handleContactPage={this.handleContactPage}/>
     }
     
   }

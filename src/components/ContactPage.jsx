@@ -14,12 +14,24 @@ class ContactPage extends React.Component {
         return this.props.handleHomePage() 
     }
 
+    handleContactPage = (e) => {
+        return this.props.handleContactPage() 
+    }
+
     render() {
         return(
-            <div className='App'>
-                <header className="App-header">
-                    <h1>EMAIL!</h1>
-                </header>
+            <div className='Contact-page'>
+                <div className='Nav-bar'>
+                   <p onClick={this.handleHomePage} className='tabs'>Welcome</p>
+                   <p>Projects</p>
+                   <p>Education</p>
+                   <p onClick={this.handleContactPage} className='tabs'>Contact</p>
+               </div>
+               <div className='Page-contact'>
+                EMAIL
+               </div>
+               
+
             </div>
         )
     }

@@ -9,6 +9,10 @@ class HomePage extends React.Component {
         }
     }
 
+    handleHomePage = (e) => {
+        return this.props.handleHomePage()
+    }
+
     handleContactPage = (e) => {
         return this.props.handleContactPage() 
     }
@@ -16,12 +20,19 @@ class HomePage extends React.Component {
     render() {
         return(
             <div className='Home-page'>
-               <div className='Nav-bar'>
-                   <p>Welcome</p>
+                <div className='Nav-bar'>
+                   <p onClick={this.handleHomePage} className='tabs'>Welcome</p>
                    <p>Projects</p>
                    <p>Education</p>
-                   <p>Contact</p>
+                   <p onClick={this.handleContactPage} className='tabs'>Contact</p>
                </div>
+               <div className='Page-home'>
+                Hello
+               </div>
+                
+
+               
+
             </div>
         )
     }
