@@ -1,4 +1,4 @@
-.Home-page {
+.Project-page {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -18,7 +18,7 @@
     color: white;
 }
 
-.Page-home {
+.Page-project {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -32,6 +32,4 @@
 
 .tabs {
     cursor: pointer;
-    color: white;
-    text-decoration: none;
 }

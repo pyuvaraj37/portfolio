@@ -1,6 +1,17 @@
 import React from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
 import HomePage from './components/HomePage.jsx';
+import ProjectPage from './components/ProjectPage.jsx';
+import EducationPage from './components/EducationPage.jsx'
 import ContactPage from './components/ContactPage.jsx';
 
 
@@ -9,34 +20,51 @@ class App extends React.Component {
     super(props)
     this.state = {
         homepage: true,
-        contactpage: false
+        projectpage: false,
+        educationpage: false,
+        contactpage: false        
     }
-  }
-
-  handleHomePage = (e) => {
-    this.setState({homepage:true, contact:false})
-  }
-
-  handleContactPage = (e) => {
-    this.setState({homepage:false, contact:true})
-  }
-
-
-  viewSelect() {
-    if (this.state.homepage) {
-      return <HomePage handleHomePage={this.handleHomePage} handleContactPage={this.handleContactPage}/>
-    }
-    else if (this.state.contact) {
-      return <ContactPage handleHomePage={this.handleHomePage} handleContactPage={this.handleContactPage}/>
-    }
-    
   }
 
   render() {
     return (
-      this.viewSelect()
-    )
+      <Router>
+        <div>
+          <Switch>
+            <Route path="/project">
+              <Project />
+            </Route>
+            <Route path="/education">
+              <Education />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    );
   }
 }
+  function Home() {
+    return <HomePage/>
+  }
+  
+  function Project() {
+    return <ProjectPage/>
+  }
+  
+  function Education() {
+    return <EducationPage/>
+  }
+
+  function Contact() {
+    return <ContactPage/>
+  }
+  
+
 
 export default App;
