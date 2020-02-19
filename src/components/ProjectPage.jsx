@@ -12,7 +12,7 @@ class ProjectPage extends React.Component {
 
     render() {
         return(
-            <div className='Project-page'>
+            <div className='page'>
                 <div className='Nav-bar'>
                     <Link to="/" className='tabs'>Home</Link>
                     <Link to="/project" className='tabs'>Project</Link>

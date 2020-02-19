@@ -1,6 +1,7 @@
 import React from 'react'
 import './HomePage.css'
 import {Link} from "react-router-dom";
+import snow from './assets/me_snow.JPG'
 
 class HomePage extends React.Component {
 
@@ -12,16 +13,24 @@ class HomePage extends React.Component {
 
     render() {
         return(
-            <div className='Home-page'>
+            <div className='page'>
                 <div className='Nav-bar'>
                     <Link to="/" className='tabs'>Home</Link>
-                    <Link to="/project" className='tabs'>Project</Link>
+                    <Link to="/project" className='tabs'>Projects</Link>
                     <Link to="/education" className='tabs'>Education</Link>
                     <Link to="/contact" className='tabs'>Contact</Link>
                </div>
                <div className='Page-home'>
-                <p>Welcome to my Portfolio.</p>
-                <p>Use the top navigation bar.</p>
+                <div className='image'>
+                <img src={snow} alt="me in snow" className='resize'/>
+                </div>
+                
+                <h1>
+                    My name is Prithviraj Yuvaraj,<br/>
+                    Welcome to my portfolio!<br/>
+                </h1>  
+
+
                </div>
                 
 

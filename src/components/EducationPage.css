@@ -1,35 +1,21 @@
-.Education-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-  }
-  
-.Nav-bar {
-    background-color: #282c34;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 8vh;
-    color: white;
-}
-
 .Page-education {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color:  #282c34;
-    width: 100%;
-    height: 92vh;
-    color: white;
+    background-color: wheat;
+    width: auto;
+    height: auto;
+    color: black;
     align-items: center;
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
-.tabs {
-    cursor: pointer;
+.icon {
+    height: auto;
+    width: 144px;
 }

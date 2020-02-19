@@ -13,7 +13,7 @@ class ContactPage extends React.Component {
 
     render() {
         return(
-            <div className='Contact-page'>
+            <div className='page'>
                 <div className='Nav-bar'>
                     <Link to="/" className='tabs'>Home</Link>
                     <Link to="/project" className='tabs'>Project</Link>

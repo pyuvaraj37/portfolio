@@ -1,22 +1,17 @@
-.Contact-page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-}
-  
 .Page-contact {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color:  #282c34;
-    width: 100%;
-    height: 92vh;
+    background-color: wheat;
+    width: auto;
+    height: auto;
     color: white;
     align-items: center;
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
-.tabs {
-    cursor: pointer;
-}

@@ -30,20 +30,31 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <Switch>
-            <Route path="/project">
-              <Project />
-            </Route>
-            <Route path="/education">
-              <Education />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+          <Route render={({location}) => (
+            <TransitionGroup>
+              <CSSTransition
+                key={location.key}
+                timeout={300}
+                classNames='item'
+                >
+                  <Switch location={location}>
+                    <Route path="/project">
+                      <Project />
+                    </Route>
+                    <Route path="/education">
+                      <Education />
+                    </Route>
+                    <Route path="/contact">
+                      <Contact />
+                    </Route>
+                    <Route path="/">
+                      <Home />
+                    </Route>
+                  </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          )}/>
+            
         </div>
       </Router>
     );
