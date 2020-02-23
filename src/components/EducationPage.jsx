@@ -26,13 +26,16 @@ class EducationPage extends React.Component {
                     <Link to="/contact" className='tabs'>Contact</Link>
                </div>
                <div className='Page-education'>
-                <div className='image'>
-                    <img src={ucm} alt="me in snow" className='resize'/>
-                </div>
+                
                 <h1>
                     Bachelors of Science <br/> 
                     in Computer Science and Engineering
                 </h1>
+
+                <div className='image'>
+                    <img src={ucm} alt="UC Merced" className='resize'/>
+                </div>
+                
                </div>
 
                 <div className='Page-education'>
@@ -59,10 +62,10 @@ class EducationPage extends React.Component {
                 </div>
 
                 <div className='Page-education'>
-                    <a target="_blank" href="https://icons8.com/icons/set/python">Python icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>   
-                    <a target="_blank" href="https://icons8.com/icons/set/java-coffee-cup-logo">Java icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-                    <a target="_blank" href="https://icons8.com/icons/set/c-plus-plus-logo">C++ icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-                    <a target="_blank" href="https://icons8.com/icons/set/html-5">Html 5 icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                    <a href="https://icons8.com/icons/set/python">Python icon</a> icon by <a href="https://icons8.com">Icons8</a>   
+                    <a href="https://icons8.com/icons/set/java-coffee-cup-logo">Java icon</a> icon by <a href="https://icons8.com">Icons8</a>
+                    <a href="https://icons8.com/icons/set/c-plus-plus-logo">C++ icon</a> icon by <a href="https://icons8.com">Icons8</a>
+                    <a href="https://icons8.com/icons/set/html-5">Html 5 icon</a> icon by <a href="https://icons8.com">Icons8</a>
                 </div>
 
                
