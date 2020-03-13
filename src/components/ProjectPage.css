@@ -1,17 +1,25 @@
 .Page-project {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: wheat;
     width: auto;
     height: auto;
-    color: white;
+    color: black;
     align-items: center;
-    text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 15px;
+    text-align: left;
 }
 
+.logo {
+	max-width:100%;
+	height:auto;
+} 
+
+.text {
+    max-width: 50%;
+}

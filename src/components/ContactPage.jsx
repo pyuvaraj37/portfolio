@@ -21,7 +21,10 @@ class ContactPage extends React.Component {
                     <Link to="/contact" className='tabs'>Contact</Link>
                </div>
                <div className='Page-contact'>
-                EMAIL
+                    <p className='text'>
+                    I can be contacted through <a href="https://www.linkedin.com/in/prithviraj-yuvaraj/">LinkedIn</a>, by <a href="mailto:ryuvaraj37@gmail.com">email</a>. <br/>
+                    My projects can be found on my <a href="https://github.com/pyuvaraj37">github</a>.
+                    </p>
                </div>
                
 
