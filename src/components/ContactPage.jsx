@@ -22,7 +22,7 @@ class ContactPage extends React.Component {
                </div>
                <div className='Page-contact'>
                     <p className='text'>
-                    I can be contacted through <a href="https://www.linkedin.com/in/prithviraj-yuvaraj/">LinkedIn</a>, by <a href="mailto:ryuvaraj37@gmail.com">email</a>. <br/>
+                    I can be contacted through <a href="https://www.linkedin.com/in/prithviraj-yuvaraj/">LinkedIn</a>, by email at <a href="mailto:ryuvaraj37@gmail.com">ryuvaraj37@gmail.com</a>. <br/>
                     My projects can be found on my <a href="https://github.com/pyuvaraj37">github</a>.
                     </p>
                </div>

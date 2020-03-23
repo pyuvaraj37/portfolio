@@ -29,7 +29,7 @@ class ProjectPage extends React.Component {
                 <BrowserView>
                     <div className='Page-project'>
                         
-                        <div className='image'>
+                        <div className='logo'>
                             <img src={vch} alt="Valley CHildrens Hospital" className='logo'/>
                         </div>
 
@@ -79,7 +79,7 @@ class ProjectPage extends React.Component {
                <MobileView>
                     <div className='Page-project-mobile'>
                         
-                        <div className='image'>
+                        <div className='image-mobile'>
                             <img src={vch} alt="Valley CHildrens Hospital" className='logo'/>
                         </div>
 
@@ -104,7 +104,7 @@ class ProjectPage extends React.Component {
                 
                     <div className='Page-project-mobile'>
 
-                        <div className='image'>
+                        <div className='image-mobile'>
                             <img src={node} alt="Node Network" className='logo'/>
                         </div>
 

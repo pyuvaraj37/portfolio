@@ -8,6 +8,11 @@ import java from "./assets/coding-images/java.png"
 import cpp from "./assets/coding-images/c++.png"
 import html from "./assets/coding-images/html.png"
 
+import {
+    BrowserView,
+    MobileView,
+} from "react-device-detect";
+
 class EducationPage extends React.Component {
 
     constructor(props){
@@ -25,18 +30,19 @@ class EducationPage extends React.Component {
                     <Link to="/education" className='tabs'>Education</Link>
                     <Link to="/contact" className='tabs'>Contact</Link>
                </div>
-               <div className='Page-education'>
+            <BrowserView>
+                <div className='Page-education'>
                 
-                <h1>
-                    Bachelors of Science <br/> 
-                    in Computer Science and Engineering
-                </h1>
+                    <h1>
+                        Bachelors of Science <br/> 
+                        in Computer Science and Engineering
+                    </h1>
 
-                <div className='image'>
-                    <img src={ucm} alt="UC Merced" className='resize'/>
+                    <div className='image'>
+                        <img src={ucm} alt="UC Merced" className='resize'/>
+                    </div>
+            
                 </div>
-                
-               </div>
 
                 <div className='Page-education'>
 
@@ -56,9 +62,6 @@ class EducationPage extends React.Component {
                         <img src={html} alt="html" className='icon'/>
                     </div>
 
-                    <p>
-                       
-                    </p>
                 </div>
 
                 <div className='Page-education'>
@@ -68,7 +71,49 @@ class EducationPage extends React.Component {
                     <a href="https://icons8.com/icons/set/html-5">Html 5 icon</a> icon by <a href="https://icons8.com">Icons8</a>
                 </div>
 
-               
+            </BrowserView>
+
+            <MobileView>
+                <div className='Page-education-mobile'>
+
+                    <div className='image'>
+                        <img src={ucm} alt="UC Merced" className='resize'/>
+                    </div>
+
+                    <h1>
+                        Bachelors of Science <br/> 
+                        in Computer Science and Engineering
+                    </h1>
+            
+                </div>
+
+                <div className='Page-education-mobile'>
+
+                    <div className='image'>
+                        <img src={python} alt="python" className='icon'/>
+                    </div>
+
+                    <div className='image'>
+                        <img src={java} alt="java" className='icon'/>
+                    </div>
+
+                    <div className='image'>
+                        <img src={cpp} alt="c++" className='icon'/>
+                    </div>
+
+                    <div className='image'>
+                        <img src={html} alt="html" className='icon'/>
+                    </div>
+
+                </div>
+
+                <div className='Page-education-mobile'>
+                    <a href="https://icons8.com/icons/set/python">Python icon</a> icon by <a href="https://icons8.com">Icons8</a>   
+                    <a href="https://icons8.com/icons/set/java-coffee-cup-logo">Java icon</a> icon by <a href="https://icons8.com">Icons8</a>
+                    <a href="https://icons8.com/icons/set/c-plus-plus-logo">C++ icon</a> icon by <a href="https://icons8.com">Icons8</a>
+                    <a href="https://icons8.com/icons/set/html-5">Html 5 icon</a> icon by <a href="https://icons8.com">Icons8</a>
+                </div>
+            </MobileView>
 
             </div>
         )

@@ -1,8 +1,9 @@
 .Page-home {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: wheat;
+    
     width: auto;
     height: auto;
     color:black;
@@ -21,6 +22,6 @@
 
 .image {
     height: auto;
-    width: 400px;
+    width: 50%;
 
 }
